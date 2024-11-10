@@ -1,0 +1,211 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.profile-icon img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    margin-left: 4px;
+    margin-bottom: -3px;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.navbar-icons .icon {
+    margin-left: 15px;
+    font-size: 1.2em;
+}
+
+/* Container for Sidebar and Main Content */
+.container {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.widget {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.widget h3 {
+    margin: 0 0 10px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin: 10px 0;
+}
+
+.progress {
+    background-color: royalblue;
+    height: 100%;
+}
+
+.complete-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: royalblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.class-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.class-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.post-section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.post-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.post-options {
+    display: flex;
+    gap: 10px;
+}
+
+.post-options button {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-btn {
+    background-color: royalblue;
+    color: #fff;
+}
+
+.post-feed {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-author {
+    font-weight: bold;
+}
+
+.post-date {
+    color: #888;
+}
+
+.post-content p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Calendar Widget Styling */
+#calendar {
+    margin-top: 20px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        margin-top: 20px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* Sidebar Calendar Header */
+#current-date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+}

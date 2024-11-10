@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- FullCalendar Library for Events Calendar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.css" />
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="presidency_logo.png" alt="Presidency University Logo">
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+            <li><a href="#" onclick="showSection('assessment')">Assessment</a></li>
+            <li><a href="#" onclick="showSection('classroom')">Classroom</a></li>
+        </ul>
+        <div class="navbar-icons">
+            <span class="icon"><img src="msgicon.png" alt="Messages"></span>
+            <span class="icon"><img src="inboxicon.png" alt="Inbox"></span>
+            <span class="icon"><img src="bellicon.png" alt="Notification"></span>
+            <span class="profile-icon"><img src="profile.png" alt="profile"></span>
+        </div>
+    </nav>
+
+    <!-- Sidebar and Main Content -->
+    <div class="container">
+        <!-- Sidebar Widgets -->
+        <aside class="sidebar">
+            <div class="widget profile-completion">
+                <h3>Profile Completion</h3>
+                <p>Complete your profile to get enrolled in courses.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 58%;"></div>
+                </div>
+                <button class="complete-btn">Complete Now</button>
+            </div>
+
+            <div class="widget my-classes">
+                <h3>My Classes</h3>
+                <div class="class-card">
+                    <p>BTECH-CSE</p>
+                    <p>Instructor</p>
+                </div>
+            </div>
+
+            <!-- Calendar Section -->
+            <div class="widget calendar">
+                <h3 id="current-date">Sunday, November 10, 2024</h3>
+                <div id="calendar"></div>
+            </div>
+
+            <div class="widget assessments">
+                <h3>Assessments</h3>
+                <ul>
+                    <li><a href="#upcoming-exams">Upcoming Exams</a></li>
+                    <li><a href="#completed-exams">Completed Exams</a></li>
+                    <li><a href="#take-test" id="start-test">Start New Test</a></li>
+                </ul>
+            </div>
+
+            <div class="widget notifications">
+                <h3>Notifications</h3>
+                <ul>
+                    <li>New announcement: Exam schedule updated</li>
+                    <li>Reminder: Class project deadline on Nov 12</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Section -->
+        <main class="main-content">
+            <div class="post-section">
+                <textarea placeholder="Post a question or comment. Your post will be visible to everyone."></textarea>
+                <div class="post-options">
+                    <button>📷 Photo</button>
+                    <button>📄 Document</button>
+                    <button>🔗 Link</button>
+                    <button class="post-btn">Post</button>
+                </div>
+            </div>
+
+            <div class="post-feed">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="post-author">Teacher Presidency</span>
+                        <span class="post-date">Nov 2, 2024 (7 days ago)</span>
+                    </div>
+                    <div class="post-content">
+                        <p>Dear Students,</p>
+                        <p>Reminder for upcoming exams next week. Please check the assessment section for details.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- FullCalendar and JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
