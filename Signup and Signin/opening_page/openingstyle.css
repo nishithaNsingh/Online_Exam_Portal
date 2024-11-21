@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-section {
+    width: 60%;
+    background-image: url('PRESIDANCY-Home.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.right-section {
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.right-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #e0e0e0;
+}
+
+.form-container {
+    position: relative;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+/* Default height for login form */
+.form-container.login-active {
+    height: 350px;
+}
+
+/* Adjusted height for signup form */
+.form-container.signup-active {
+    height: 500px;
+}
+
+.slide-controls {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide-controls input[type="radio"] {
+    display: none;
+}
+
+label.login, label.signup {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.slider-tab {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 5px;
+    background-color: #407076;
+    transition: left 0.3s ease;
+}

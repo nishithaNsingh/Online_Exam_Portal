@@ -1,0 +1,180 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #072849;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.sidebar img {
+    display: block;
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 12px 10px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+/* Content area styling */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Home Section Styling */
+#home-section {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home-section h1 {
+    font-size: 32px;
+    color: #072849;
+    margin-bottom: 15px;
+}
+
+#home-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#home-section h2 {
+    font-size: 24px;
+    color: #072849;
+    margin-top: 30px;
+}
+
+#home-section ul {
+    list-style-type: none;
+    margin: 10px 0 20px;
+    padding-left: 0;
+}
+
+#home-section ul li {
+    margin-bottom: 10px;
+}
+
+#home-section ul li a {
+    color: #4CAF50;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#home-section ul li a:hover {
+    color: #45a049;
+}
+
+/* Section Heading Styling */
+.section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Forms styling */
+form {
+    max-width: 500px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.btn-submit, .btn-action {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-submit:hover, .btn-action:hover {
+    background-color: #45a049;
+}
+
+/* Button alignment for sections */
+.section button {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Hide all sections by default */
+.section {
+    display: none;
+}
+
+/* Show only the active section */
+.section.active {
+    display: block;
+}
