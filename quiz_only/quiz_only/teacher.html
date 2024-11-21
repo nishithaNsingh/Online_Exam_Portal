@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Teacher Dashboard</h1>
+    
+    <!-- Add Class Form -->
+    <h2>Add Class</h2>
+    <form action="add_class.php" method="POST">
+      <label for="class_name">Class Name:</label>
+      <input type="text" id="class_name" name="class_name" required>
+      <button type="submit">Add Class</button>
+    </form>
+
+    <!-- Create Quiz Form -->
+    <h2>Create Quiz</h2>
+    <form action="create_quiz.php" method="POST">
+      <label for="quiz_title">Quiz Title:</label>
+      <input type="text" id="quiz_title" name="quiz_title" required><br><br>
+  
+      <label for="quiz_description">Quiz Description:</label>
+      <textarea id="quiz_description" name="quiz_description" required></textarea><br><br>
+  
+      <h3>Questions</h3>
+      <div id="questions-container">
+          <div class="question">
+              <label for="question_1">Question 1:</label>
+              <input type="text" name="questions[0][question]" required>
+  
+              <label for="option_1_1">Option 1:</label>
+              <input type="text" name="questions[0][options][]" required>
+  
+              <label for="option_1_2">Option 2:</label>
+              <input type="text" name="questions[0][options][]" required>
+  
+              <label for="option_1_3">Option 3:</label>
+              <input type="text" name="questions[0][options][]" required>
+  
+              <label for="option_1_4">Option 4:</label>
+              <input type="text" name="questions[0][options][]" required>
+  
+              <label for="correct_option_1">Correct Option:</label>
+              <input type="number" name="questions[0][correct]" min="1" max="4" required>
+          </div>
+      </div>
+      <button type="button" onclick="addQuestion()">Add Question</button><br><br>
+  
+      <button type="submit">Create Quiz</button>
+  </form>
+  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
